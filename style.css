@@ -84,50 +84,90 @@ header li::before {
 
 
 .infoSection {
+    position: relative;
     min-height: 100vh;
     min-width: 100%;
     margin-top: 100px;
 }
 
-.infoSection .info1:nth-child(3) img {
-    height: 95px;
+/* .infoSection .info1:nth-child(1) img {
+    position: absolute;
+    height: 130px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
 }
+
+.infoSection .info1:nth-child(2) img {
+    position: absolute;
+    height: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+}
+
+
+.infoSection .info1:nth-child(3) img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 95px;
+} */
 
 .info1 {
     position: relative;
+    height: 500px;
     width: 100%;
     display: flex;
     margin-top: 200px;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 .info1 img {
-    height: 200px;
-    padding: 100px;
+    height: 100%;
+    width: 100%;
 }
 
 .divButton {
     position: absolute;
     height: 30px;
-    width: 30px;
     bottom: 0;
     width: 300px;
 }
 
 .info1 p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 50px;
     text-align: justify;
-    align-self: center;
-    max-width: 300px;
+    max-width: 100%;
 }
 
-.divButton button {
-    height: 100%;
-    width: 100%;
+.info1 button {
+    position: absolute;
+    bottom: 100px;
+    height: 30px;
+    width: 300px;
     border-radius: 10px;
     background-color: #ef45f560;
 }
 
+.img-container {
+    position: relative;
+    padding: 50px;
+    height: 250px;
+    width: 250px;
+}
+
+.p-container {
+    position: relative;
+    height: 350px;
+    width: 300px;
+}
 
 @media only screen and (max-width: 1150px) {
     #robocupTitle {
@@ -144,11 +184,43 @@ header li::before {
 
 
 @media only screen and (max-width: 440px) {
-    .infoSection .info1:nth-child(1) img {
-        height: 55px;
+    .info1 button {
+        width: 150px;
+        float: right;
+    }
+    /* .infoSection .info1:nth-child(1) img {
+        width: 5px;
     }
     .infoSection .info1:nth-child(3) img {
         height: 45px;
-    }
+    } */
     
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+
+@media only screen and (max-width: 410px) {
+    .info1 {
+        flex-wrap: wrap;
+    }
+    .p-container {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 150px;
+    }
+    .info1 p {
+        padding: 0;
+    }
+
+    .info1 button {
+        bottom: 0;
+    }
 }

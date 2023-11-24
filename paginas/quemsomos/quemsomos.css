@@ -1,0 +1,65 @@
+#colab {
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#colab::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 350px;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: #71289C;
+    z-index: -1;
+}
+
+.colab-pic1 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: #71289C;
+}
+
+.circle-colab {
+    position: relative;
+    height: 90%;
+}
+
+
+
+.circle-container img {
+    padding: 15px;
+    height: 90%;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1285px) {
+
+    .colab-pic1 {
+        height: 100%;
+    }
+
+    .circle-container img {
+        display: flex;
+        height: 200px;
+        flex-basis: 50%;
+    }
+}
