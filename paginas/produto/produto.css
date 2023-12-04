@@ -1,0 +1,62 @@
+#roboh1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.robo-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.wrap {
+    display: flex;
+}
+
+.desc-robo {
+    height: 100%;
+    display: flex;
+}
+
+.desc-robo p {
+    font-size: 1.5em;
+    padding: 100px;
+}
+
+.robo-img {
+    display: flex;
+    height: 100%;
+}
+
+.robo-img img {
+    margin-right: 200px;
+    margin-top: 100px;
+    height: 300px;
+    display: flex;
+    border: 10px solid #71289C;
+}
+
+.line-container {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    height: 20px;
+    margin-top: 140px;
+    width: 80%;
+    background-color: #71289C;
+}
+
+@media only screen and (max-width: 1020px) {
+    .wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .robo-img img {
+        margin-right: 0;
+    }
+}
